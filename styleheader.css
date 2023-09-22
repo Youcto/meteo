@@ -6,7 +6,7 @@
 
 body {
     font-family:'Courier New', Courier, monospace;
-    background-color: #656565;
+    background-color: rgb(65, 65, 65);
     overflow-x: hidden;
 }
 
@@ -60,7 +60,7 @@ header {
 }
 
 .nav-bar ul li a.acrive {
-    color: #19376d;
+    color: black;
 }
 
 @media only screen and (max-width: 900px) {
@@ -71,7 +71,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background: #0B2447;
+        background: #000000;
         margin: 6px 0;
     }
     .nav-bar {
