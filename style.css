@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #454141; 
+    background-image: url(test/img/fond1.jpg);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -14,30 +14,30 @@ body {
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 20px rgb(89, 0, 255);
     width: 300px;
     text-align: center;
-    box-shadow: white;
-    height: 260px;
+    box-shadow: rgb(255, 250, 250, 250);
+    height: 270px;
 }
 
 .login-container h2 {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #585656;
+    color: #0059ff;
 }
 
 .login-container input  {
     width: 90%;
     padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid #030000;
+    border: 1px solid #000000;
     border-radius: 5px;
 }
 
 .login-container button {
-    background-color:#838383;
+    background-color:#17009c;
     color: #fff;
     padding: 15px 30px;
     border: none;
@@ -48,7 +48,7 @@ body {
 }
 
 .login-container button:hover {
-    background-color: #444444;
+    background-color: #0e0158;
 }
 
 a {
@@ -63,6 +63,6 @@ a:hover {
 
 @media (max-width: 400px) {
     .login-container {
-        width: 100px;
+        width: 300px;
     }
 }
