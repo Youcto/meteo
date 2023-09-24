@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+}
+#sidebar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    background: #1a1a1a;
+    text-align: center;
+    transform-origin: left;
+    transform: perspective(1200px) rotateY(90deg);
+    transition: all 400ms ease;
+}
+
+#sidebar ul li {
+    color: #ccc;
+    font: 16px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #222;
+    line-height: 50px;
+}
+
+#sidebar.active {
+    transform: perspective(1200px)rotateY(0deg);
+}
+#togglebtn {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    transition: left 200ms linear 0ms, transform 300ms ease 100ms;
+}
+#togglebtn.active {
+    left: 230px;
+    transform: rotate(360deg);
+}
+
+#togglebtn span {
+    position: relative;
+    top: 0px;
+    display: block;
+    background: #1a1a1a;
+    width: 30px;
+    height: 5px;
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: transform 300ms ease 200ms;
+}
+#togglebtn.active span:nth-child(1) {
+    top: 10px;
+    transform: rotate(45deg);
+}
+#togglebtn.active span:nth-child(2) {
+    opacity: 0;
+}
+#togglebtn.active span:nth-child(1) {
+    top: -10px;
+    transform: rotate(-45deg);
+}
