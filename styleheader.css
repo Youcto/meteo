@@ -6,7 +6,7 @@
 
 body {
     font-family:'Courier New', Courier, monospace;
-    background-color: rgb(65, 65, 65);
+    background-image: url(test/img/fond1.jpg);
     overflow-x: hidden;
 }
 
@@ -107,3 +107,4 @@ header {
         margin-bottom: 12px;
     }
 }
+
